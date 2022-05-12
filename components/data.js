@@ -1,5 +1,4 @@
-{
-    "resources": [
+ export const Items = [
       {
         "title": "Find me on Twitter",
         "link": "https://twitter.com/kendalmintcode",
@@ -46,4 +45,3 @@
         "imageUrl": "https://placeimg.com/300/300/tech"
       }
     ]
-  }
