@@ -3,7 +3,7 @@ import Image from 'next/image'
 import logo from '../images/logo.png'
 import { ShoppingCartIcon, UserIcon, SearchIcon,HeartIcon} from '@heroicons/react/outline'
 
-function Header() {
+function Header({placeholder}) {
   return (
         <header className='top-0 sticky my-0 z-50 grid grid-cols-5 bg-white p-5 md:px-10 shadow-md'>
 
@@ -14,7 +14,7 @@ function Header() {
 
 
         <div className='font-sans flex items-center md: border-2 rounded-full p-2 md:shadow-sm'>
-          <input type="text" placeholder='Search products' className=' font-sans flex-grow outline-none bg-transparent text-sm text-center '/>
+          <input type="text" placeholder={'Search'} className=' font-sans flex-grow pl-5 outline-none bg-transparent text-sm'/>
           <SearchIcon className='hidden md:inline-flex h-8 hover:bg-black hover:text-white cursor-pointer p-2 rounded-full' />
         </div>
 
