@@ -4,8 +4,9 @@ import logo from '../images/logo.png'
 import { ShoppingCartIcon, UserIcon, SearchIcon,HeartIcon} from '@heroicons/react/outline'
 
 function Header({placeholder}) {
+    placeholder = '';
   return (
-        <header className='top-0 sticky my-0 z-50 grid grid-cols-5 bg-white p-5 md:px-10 shadow-md'>
+        <header className='top-0 sticky my-0 mx-0 z-50 grid grid-cols-5 bg-white p-5 md:px-10 shadow-md'>
 
         <div className='relative flex items-center h-10 cursor-pointer my-auto'>
           <Image src={logo} layout='fill' objectFit='contain' objectPosition='left'/>
