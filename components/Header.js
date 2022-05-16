@@ -20,7 +20,7 @@ function Header({placeholder}) {
           <SearchIcon className='hidden md:inline-flex h-8 hover:bg-black hover:text-white cursor-pointer p-2 rounded-full' />
         </div>
 
-        <Link href='/ExtraLargeCard'>
+        <Link href='/cart'>
         <div className='flex items-center justify-end cursor-pointer' >
           <div>
           <ShoppingCartIcon className=' h-7 hover:opacity-50'  />
