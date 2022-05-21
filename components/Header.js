@@ -3,8 +3,11 @@ import Image from 'next/image'
 import logo from '../images/logo.png'
 import { ShoppingCartIcon, UserIcon, SearchIcon,HeartIcon} from '@heroicons/react/outline'
 import Link from 'next/link'
+import { useStateValue } from './StateProvider'
 
 function Header({placeholder}) {
+    const [{basket, user}, dispatch] = useStateValue();
+
     placeholder = '';
   return (
         <header className='top-0 w-screen sticky my-0 mx-0 z-50 grid grid-cols-5 bg-white p-5 md:px-10 shadow-md'>
@@ -25,13 +28,15 @@ function Header({placeholder}) {
           <div>
           <ShoppingCartIcon className=' h-7 hover:opacity-50'  />
         </div>
-          <p className='h-5  text-sm text-center rounded-full w-4 bg-violet-500 '>0</p>
+          <p className='h-5  text-sm text-center rounded-full w-4 bg-violet-500 '>{basket?.length}</p>
           </div>
           </Link>
+          <Link href='/example'>
         <div className='flex items-center justify-end cursor-pointer '>
           <HeartIcon className='h-7 hover:opacity-50' />
         <p className='h-5  text-sm text-center rounded-full w-4 bg-violet-500 '>0</p>
         </div>
+        </Link>
 
         <div className='flex items-center justify-end cursor-pointer'>
           <UserIcon className='h-7 hover:opacity-50' />
