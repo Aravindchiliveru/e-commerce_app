@@ -5,7 +5,7 @@ import CheckoutProduct from "../components/CheckoutProduct";
 import { getBasketTotal } from "../components/reducer";
 import { useStateValue } from "../components/StateProvider";
 import Subtotal from "../components/Subtotal";
-
+import Header from '../components/Header'
 
 function Checkout() {
     const [show, setShow] = useState(true);
@@ -21,6 +21,7 @@ function Checkout() {
     return (
         <>
             <div>
+                
                
                 {show && (
                     <div className="w-full h-full bg-black bg-opacity-90 top-0 overflow-y-auto overflow-x-hidden fixed sticky-0" id="chec-div">
