@@ -1,6 +1,9 @@
 import React from 'react'
+import { useStateValue } from '../pages/StateProvider';
 
-function CheckoutProduct({id, imageUrl, title, productPrice, productRating}) {
+function CheckoutProduct({imageUrl, title, productPrice, productRating}) {
+ const [{basket}, dispatch] = useStateValue();
+
   return (
     <div>
        <div className="md:flex items-center mt-14 py-8 border-t border-gray-200">
@@ -12,7 +15,7 @@ function CheckoutProduct({id, imageUrl, title, productPrice, productRating}) {
                                             <div className="flex items-center justify-between w-full pt-1">
                                                 <p className="text-base font-black leading-none text-gray-800">{title}</p>
                                                 <select className="py-2 px-1 border border-gray-200 mr-6 focus:outline-none">
-                                                    <option>01</option>
+                                                    <option>{basket?.length}</option>
                                                     <option>02</option>
                                                     <option>03</option>
                                                 </select>

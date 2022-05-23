@@ -1,37 +1,42 @@
-
+import React from "react";
 import { Router } from "next/router";
-import { useEffect, useState } from "react";
+import { useEffect} from "react";
 import CheckoutProduct from "../components/CheckoutProduct";
-import { getBasketTotal } from "../components/reducer";
-import { useStateValue } from "../components/StateProvider";
+import { useStateValue } from "./StateProvider";
 import Subtotal from "../components/Subtotal";
 import Header from '../components/Header'
 
-function Checkout() {
-    const [show, setShow] = useState(true);
 
-    useEffect(() => {
-        const {pathname} = Router
-        if(pathname == '/cart')
-        {
-            Router.push('/')
-        }
-    })
+function Checkout() {
+    
+   const [{basket}, dispatch] = useStateValue()
     
     return (
+
         <>
+            <Header />
             <div>
-                
-               
-                {show && (
-                    <div className="w-full h-full bg-black bg-opacity-90 top-0 overflow-y-auto overflow-x-hidden fixed sticky-0" id="chec-div">
+
+                    <div className=" top-14 w-full h-full bg-black bg-opacity-90 top-0 overflow-y-auto overflow-x-hidden fixed sticky-0 " id="chec-div">
                         <div className="w-full absolute z-10 right-0 h-full overflow-x-hidden transform translate-x-0 transition ease-in-out duration-700" id="checkout">
                             <div className="flex md:flex-row flex-col justify-end" id="cart">
                                 <div className="lg:w-1/2 w-full md:pl-10 pl-4 pr-10 md:pr-4 md:py-12 py-8 bg-white overflow-y-auto overflow-x-hidden h-screen" id="scroll">
                                     
                                     <p className="text-5xl font-black leading-10 text-gray-800 pt-3">Bag</p>
-                                    <CheckoutProduct
-                                    />
+
+                                        {basket.map(item => (
+
+                                        <CheckoutProduct 
+                                            id={item.id}
+                                            imageUrl = {item.image}
+                                            title = {item.title}
+                                            productPrice = {item.price}
+                                            productRating = {item.rating}
+                                        />
+                                        ))}
+
+                                    
+                                    
                                 </div>
                                 <div className="xl:w-1/1 md:w-1/3 w-full bg-gray-100 h-full">
                                     <div className="flex flex-col md:h-screen px-14 py-20 justify-between overflow-y-auto">
@@ -54,10 +59,10 @@ function Checkout() {
                                             <div className="flex items-center pb-6 justify-between lg:pt-5 pt-20">
                                                 <p className="text-2xl leading-normal text-gray-800">Total</p>
                                                 <p className="text-2xl font-bold leading-normal text-right text-gray-800">
-                                                
+                                                <Subtotal />
                                                 </p>
                                             </div>
-                                            <button onClick={() => setShow(!show)} className="text-base leading-none w-full py-5 bg-gray-800 border-gray-800 border focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-white">
+                                            <button className="text-base leading-none w-full py-5 bg-gray-800 border-gray-800 border focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-white">
                                                 Checkout
                                             </button>
                                         </div>
@@ -66,8 +71,9 @@ function Checkout() {
                             </div>
                         </div>
                     </div>
-                )}
+                
             </div>
+            
 
             <style>
                 {` /* width */

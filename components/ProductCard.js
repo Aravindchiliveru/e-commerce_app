@@ -1,11 +1,10 @@
 import { HeartIcon, PlusIcon } from '@heroicons/react/outline'
-import { title } from 'process';
 import React from 'react'
-import { useStateValue } from './StateProvider'
+import { useStateValue } from '../pages/StateProvider'
 
 export default function ProductCard({product}) {
     const [{basket}, dispatch] = useStateValue();
-
+    console.log(basket)
     const addtoBasket = () => {
         dispatch({
             type : 'ADD_TO_BASKET',
@@ -24,7 +23,7 @@ export default function ProductCard({product}) {
     <div className="w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-80 lg:h-80 lg:aspect-none">
       <img
         src={product.imageUrl}
-        alt={product.heading}
+       
         className="w-full h-full object-center object-cover lg:w-full lg:h-full"
       />
       

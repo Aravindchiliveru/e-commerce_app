@@ -1,6 +1,6 @@
 import { HeartIcon,PlusIcon } from '@heroicons/react/outline'
 import products from "../components/products.json"
-import { useStateValue } from './StateProvider'
+import { useStateValue } from '../pages/StateProvider'
 import ProductCard from '../components/ProductCard'
 
 

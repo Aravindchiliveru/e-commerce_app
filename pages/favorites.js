@@ -1,15 +1,13 @@
 import React from 'react'
 import Header from '../components/Header'
-import { useStateValue } from '../components/StateProvider';
+import { useStateValue } from './StateProvider';
 
 function Favorites() {
-    const [{basket, user}, dispatch] = useStateValue();
-
 
   return (
     <div>
-        <Header placeholder={undefined} />
-        <p>Subtotal = {basket.length}</p>
+        
+        <p>Subtotal = </p>
     </div>
   )
 }
