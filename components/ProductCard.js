@@ -1,6 +1,6 @@
 import { HeartIcon, PlusIcon } from '@heroicons/react/outline'
 import React from 'react'
-import { useStateValue } from '../pages/StateProvider'
+import { useStateValue } from './StateProvider'
 
 export default function ProductCard({product}) {
     const [{basket}, dispatch] = useStateValue();

@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../components/Header'
-import { useStateValue } from './StateProvider';
+import { useStateValue } from '../components/StateProvider';
 
 function Favorites() {
 

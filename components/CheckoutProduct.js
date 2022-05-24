@@ -1,5 +1,5 @@
 import React from 'react'
-import { useStateValue } from '../pages/StateProvider';
+import { useStateValue } from './StateProvider';
 
 function CheckoutProduct({imageUrl, title, productPrice, productRating}) {
  const [{basket}, dispatch] = useStateValue();

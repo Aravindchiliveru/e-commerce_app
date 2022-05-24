@@ -3,7 +3,7 @@ import Image from 'next/image'
 import logo from '../images/logo.png'
 import { ShoppingCartIcon, UserIcon, SearchIcon,HeartIcon} from '@heroicons/react/outline'
 import Link from 'next/link'
-import { useStateValue } from '../pages/StateProvider'
+import { useStateValue } from './StateProvider'
 
 
 function Header({placeholder}) {
