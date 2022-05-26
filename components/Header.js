@@ -8,12 +8,15 @@ import { useStateValue } from './StateProvider'
 
 function Header({placeholder}) {
  const [{basket, user}, dispatch] = useStateValue();
+ const [{favs, users}, dispatcher] = useStateValue();
     placeholder = '';
   return (
         <header className='top-0 w-screen sticky my-0 mx-0 z-50 grid grid-cols-5 bg-white p-5 md:px-10 shadow-md'>
 
         <div className='relative flex items-center h-10 cursor-pointer my-auto'>
+          <Link href='/'>
           <Image src={logo} layout='fill' objectFit='contain' objectPosition='left'/>
+          </Link>
         </div>
 
 
@@ -31,10 +34,10 @@ function Header({placeholder}) {
           <p className='h-5  text-sm text-center rounded-full w-4 bg-violet-500 '>{basket?.length}</p>
           </div>
           </Link>
-          <Link href='/example'>
+          <Link href='/favorites'>
         <div className='flex items-center justify-end cursor-pointer '>
           <HeartIcon className='h-7 hover:opacity-50' />
-        <p className='h-5  text-sm text-center rounded-full w-4 bg-violet-500 '>{basket.length}</p>
+        <p className='h-5  text-sm text-center rounded-full w-4 bg-violet-500 '>{favs?.length}</p>
         </div>
         </Link>
 
