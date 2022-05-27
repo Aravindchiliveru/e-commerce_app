@@ -3,7 +3,7 @@ import React from 'react'
 import { useStateValue } from './StateProvider'
 
 export default function ProductCard({product}) {
-    const [{basket}, dispatch] = useStateValue();
+    const [{basket},{favourites},dispatch] = useStateValue();
     console.log(basket)
     const addtoBasket = () => {
         dispatch({
@@ -16,6 +16,16 @@ export default function ProductCard({product}) {
                 price : product.productPrice
 
             },
+        },
+      {
+          type : 'ADD_TO_FAV',
+          item : {
+            id : product.id,
+                  title: product.title,
+                  image : product.imageUrl,
+                  rating : product.productRating,
+                  price : product.productPrice
+          },
         });
     };
   return (
@@ -28,7 +38,7 @@ export default function ProductCard({product}) {
       />
       
     </div>
-    <HeartIcon className='text-white h-[30px] absolute justify-center m-auto right-5 top-5 sm:top-0 sm:right-2 z-10 hover:cursor-grab '  />
+    <HeartIcon className='text-white h-[30px] absolute justify-center m-auto right-5 top-5 sm:top-0 sm:right-2 z-10 hover:cursor-grab ' onClick={addtoBasket} />
      <PlusIcon className='text-white h-[30px] absolute justify-center m-auto right-5 top-20 sm:top-12 sm:right-2 z-10 hover:cursor-grab ' onClick={addtoBasket}/>
     <div className="mt-4 flex justify-between">
       <div>
