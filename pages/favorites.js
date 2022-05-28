@@ -7,6 +7,7 @@ function favorites() {
 
     const [{favs}, dispatcher] = useStateValue()
     
+    
     return (
 
         <>
