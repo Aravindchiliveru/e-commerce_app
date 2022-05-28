@@ -1,5 +1,7 @@
 export const initialState = {
     basket : [],
+    favs : []
+    
 };
 
 export const getBasketTotal = (basket) => 
@@ -13,9 +15,15 @@ const reducer = (state, action) => {
             ...state,
             basket: [...state.basket, action.item],
         };
+        case 'ADD_TO_FAV':
+        return {
+            ...state,
+            favs : [...state.favs, action.item],
+        };
 
         
     }
 };
+
 
 export default reducer
