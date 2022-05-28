@@ -5,6 +5,7 @@ import Header from '../components/Header'
 import Banner from '../components/Banner'
 import SmallCard from '../components/SmallCard'
 import Footer from '../components/Footer'
+import reducer, {initialState} from '../components/reducer'
 
 
 const Home: NextPage = () => {
