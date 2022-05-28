@@ -1,4 +1,6 @@
 import React from "react";
+import { Router } from "next/router";
+import { useEffect} from "react";
 import CheckoutProduct from "../components/CheckoutProduct";
 import { useStateValue } from "../components/StateProvider";
 import Subtotal from "../components/Subtotal";
@@ -25,7 +27,6 @@ function Checkout() {
                                         {basket.map(item => (
 
                                         <CheckoutProduct 
-                                            key={item.id}
                                             id={item.id}
                                             imageUrl = {item.image}
                                             title = {item.title}
@@ -58,7 +59,7 @@ function Checkout() {
                                             <div className="flex items-center pb-6 justify-between lg:pt-5 pt-20">
                                                 <p className="text-2xl leading-normal text-gray-800">Total</p>
                                                 <p className="text-2xl font-bold leading-normal text-right text-gray-800">
-                                                
+                                                <Subtotal />
                                                 </p>
                                             </div>
                                             <button className="text-base leading-none w-full py-5 bg-gray-800 border-gray-800 border focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 text-white">
