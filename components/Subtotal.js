@@ -10,11 +10,11 @@ function Subtotal() {
         <CurrencyFormat renderText={(value) => (
             <>
              ({basket?.length} items):
-            <strong> {value} </strong>
+            <strong> Rs. {value} </strong>
             </>
         )} 
         decimalScale = {2}
-        value = {0}
+        value = {getBasketTotal(basket) + (basket.length>3?100:basket.length*40) + getBasketTotal(basket)*0.18 - getBasketTotal(basket)*0.10}
         displayType = {'text'}
         thousandSeperator = {true}
         />

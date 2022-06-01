@@ -54,9 +54,9 @@ export default function ProductCard({product}) {
             {product.heading}
           </a>
         </h3>
-        <p className="mt-1 text-sm text-gray-500">{product.productRating}</p>
+        <p className="mt-1 text-sm text-gray-500"> {Array(product.productRating).fill().map(() => (<>⭐</>))}</p>
       </div>
-      <p className="text-sm font-medium text-gray-900">{product.productPrice}</p>
+      <p className="text-sm font-medium text-gray-900">Rs. {product.productPrice}</p>
     </div>
   </div>
   )

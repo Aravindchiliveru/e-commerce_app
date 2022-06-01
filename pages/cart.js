@@ -5,6 +5,7 @@ import CheckoutProduct from "../components/CheckoutProduct";
 import { useStateValue } from "../components/StateProvider";
 import Subtotal from "../components/Subtotal";
 import Header from '../components/Header'
+import { getBasketTotal } from "../components/reducer";
 
 
 function Checkout() {
@@ -27,7 +28,7 @@ function Checkout() {
                                         {basket.map(item => (
 
                                         <CheckoutProduct 
-                                            key={item.id}
+                                            
                                             id={item.id}
                                             imageUrl = {item.image}
                                             title = {item.title}
@@ -45,15 +46,19 @@ function Checkout() {
                                             <p className="text-4xl font-black leading-9 text-gray-800">Summary</p>
                                             <div className="flex items-center justify-between pt-16">
                                                 <p className="text-base leading-none text-gray-800">Subtotal</p>
-                                                <p className="text-base leading-none text-gray-800"></p>
+                                                <p className="text-base leading-none text-gray-800">Rs. {getBasketTotal(basket)}</p>
                                             </div>
                                             <div className="flex items-center justify-between pt-5">
                                                 <p className="text-base leading-none text-gray-800">Shipping</p>
-                                                <p className="text-base leading-none text-gray-800">$30</p>
+                                                <p className="text-base leading-none text-gray-800">Rs. {basket.length>3?100:basket.length*40}</p>
                                             </div>
                                             <div className="flex items-center justify-between pt-5">
                                                 <p className="text-base leading-none text-gray-800">Tax</p>
-                                                <p className="text-base leading-none text-gray-800">$35</p>
+                                                <p className="text-base leading-none text-gray-800">Rs. {getBasketTotal(basket)*0.18} </p>
+                                            </div>
+                                            <div className="flex items-center justify-between pt-5">
+                                                <p className="text-base leading-none text-gray-800">Discount Sale</p>
+                                                <p className="text-base leading-none text-gray-800">- Rs. {getBasketTotal(basket)*0.10} </p>
                                             </div>
                                         </div>
                                         <div>

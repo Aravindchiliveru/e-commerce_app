@@ -20,7 +20,6 @@ function Favorites() {
 
                                 {favs.map(item => (
                                 <FavProduct 
-                                    key={item.id}
                                     id={item.id}
                                     imageUrl = {item.image}
                                     title = {item.title}

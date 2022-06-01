@@ -1,68 +1,68 @@
  [
         
       {
-          "id" : "1",
+          "id" : 1,
         "title": "HUETRAP",
         "heading":"Men Cotton Pure T-shirt",
         "imageUrl": "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/productimage/2019/12/12/1aab2a18-6774-4f83-b292-fe301755a3351576102551329-1.jpg",
-        "productPrice": "Rs 300",
-        "productRating": "4",
-        "percentageoff": "10%"
+        "productPrice": 300,
+        "productRating": 4,
+        "percentageoff": 10
       },
 
       {
-        "id" : "2",
+        "id" : 2,
         "title": "ROADSTER",
         "heading":"Men Cotton Pure T-shirt",
         "imageUrl": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/2499214/2018/5/23/06013b53-4939-4458-bb17-01fea25f000e1527063527364-Roadster-Men-White-Printed-Round-Neck-T-shirt-4261527063525890-2.jpg",
-        "productPrice": "Rs 300",
-        "productRating": "4",
-        "percentageoff": "10%"
+        "productPrice": 300,
+        "productRating": 4,
+        "percentageoff": 10
       },
 
       {
-        "id" : "3",
+        "id" : 3,
         "title": "Mast & Harbour",
         "heading":"Men Cotton Pure T-shirt",
         "imageUrl": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/12865246/2021/1/7/5286158e-6201-4b08-85a0-6ac061fb701f1610001601459-Mast--Harbour-Men-Tshirts-9821610001599657-1.jpg",
-        "productPrice": "Rs 300",
-        "productRating": "4",
-        "percentageoff": "10%"
+        "productPrice": 300,
+        "productRating": 4,
+        "percentageoff": 10
       },
 
       {
-        "id" : "4",
+        "id" : 4,
         "title": "Levis",
         "heading":"Men Cotton Pure T-shirt",
         "imageUrl": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/1824369/2017/5/5/11493980166188-Roadster-Men-White-Printed-Round-Neck-T-shirt-4411493980165893-1.jpg",
-        "productPrice": "Rs 300",
-        "productRating": "4",
-        "percentageoff": "10%"
+        "productPrice": 300,
+        "productRating": 4,
+        "percentageoff": 10
       },
 
       {
-        "id" : "5",
+        "id" : 5,
         "title": "HnM",
         "heading":"Men Cotton Pure T-shirt",
         "imageUrl": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/8889611/2019/3/20/3eae8fb4-b7ca-4e01-80bf-d1e59ab1568d1553080254589-Roadster-Men-Black--White-Regular-Fit-Checked-Casual-Shirt-9-1.jpg",
-        "productPrice": "Rs 300",
-        "productRating": "4",
-        "percentageoff": "10%"
+        "productPrice": 300,
+        "productRating": 4,
+        "percentageoff": 10
       },
 
       {
-        "id" : "6",
+        "id" : 6,
         "title": "HIGHLANDER",
         "heading":"Men Cotton Pure T-shirt",
         "imageUrl": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/16532696/2021/12/16/858351ae-13d7-41c9-98f9-13486c0696d81639640760730HIGHLANDERMenWhiteSlimFitCasualShirt1.jpg",
-        "productPrice": "Rs 300",
-        "productRating": "4",
-        "percentageoff": "10%"
+        "productPrice": 300,
+        "productRating": 4,
+        "percentageoff": 10
       },
 
       {
-        "id" : "7",
-        "title": "Leviss",
+        "id" : 7,
+        "title": "Levis",
         "heading":"Men Blue Pure Cotton Hooded Washed Denim Jacket",
         "imageUrl": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/14595324/2022/1/25/11aa09a4-e289-42de-ac61-6168127312491643111868943-ether-Men-Jackets-4561643111868293-1.jpg",
         "productPrice": "Rs 1300",
@@ -71,13 +71,13 @@
       },
 
       {
-        "id" : "8",
+        "id" : 8,
         "title": "PUMA",
         "heading":"Men Navy Blue Solid Open Front Jacket",
         "imageUrl": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/15119014/2021/10/5/a2177f80-4bb3-47db-bf70-c7c26c5e1bd81633428032174-Puma-Men-Jackets-9401633428030646-1.jpg",
-        "productPrice": "Rs 2500",
-        "productRating": "4",
-        "percentageoff": "10%"
+        "productPrice": 2500,
+        "productRating": 4,
+        "percentageoff": 10
       },
 
       {
