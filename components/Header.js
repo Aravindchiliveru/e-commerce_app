@@ -38,10 +38,11 @@ function Header({placeholder}) {
         <p className='h-5  text-sm text-center rounded-full w-4 bg-violet-500 '>{favs?.length}</p>
         </div>
         </Link>
-
+        <Link href='/Login'>
         <div className='flex items-center justify-end cursor-pointer'>
           <UserIcon className='h-7 hover:opacity-50' />
         </div>
+        </Link>
 
 
 

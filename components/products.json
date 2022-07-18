@@ -65,9 +65,9 @@
         "title": "Levis",
         "heading":"Men Blue Pure Cotton Hooded Washed Denim Jacket",
         "imageUrl": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/14595324/2022/1/25/11aa09a4-e289-42de-ac61-6168127312491643111868943-ether-Men-Jackets-4561643111868293-1.jpg",
-        "productPrice": "Rs 1300",
-        "productRating": "4",
-        "percentageoff": "10%"
+        "productPrice":  1300,
+        "productRating":4,
+        "percentageoff": 10
       },
 
       {
@@ -85,19 +85,19 @@
         "title": "Peter England Elite",
         "heading":"Men Navy Blue Self Design Slim Fit Two Piece Formal Suit",
         "imageUrl": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/17492564/2022/3/11/fd36de45-7a4e-4593-a5cf-c757ab976f961646999593248MenNavyTwoPieceSuit1.jpg",
-        "productPrice": "Rs 7999",
-        "productRating": "4",
-        "percentageoff": "10%"
+        "productPrice": 7999,
+        "productRating": 4,
+        "percentageoff": 10
       },
 
       {
-        "id" : "10",
+        "id" : 10,
       "title": "Blackberrys",
       "heading":"Men Purple Self-Design Slim-Fit Single-Breasted 3-Piece Formal Suit",
       "imageUrl": "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/15714036/2021/10/2/7c00f97b-80e9-42af-8c04-ef56ea617f951633180464732BlackberrysMenPurpleSelf-DesignSlim-FitSingle-Breasted3-Piec1.jpg",
-      "productPrice": "Rs 27999",
-      "productRating": "4",
-    "percentageoff": "10%"
+      "productPrice": 27999,
+      "productRating": 4,
+    "percentageoff": 10
       },
 
       {
